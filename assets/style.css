@@ -445,3 +445,79 @@ main{
         }
     }
 }
+
+.avaliation-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #dfdfdf;
+
+
+    .avaliation-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2,p{
+            text-align: center;
+            width: 50%;
+        }
+
+        p{
+            margin: 1rem 0;
+        }
+    }
+
+    .avaliation-standards{
+
+        ul{
+            list-style-type: none;
+            display: flex;
+
+            .item{
+                border-right: 1px solid #dfdfdf;
+                padding: 1rem;
+
+                .icone{
+                    width: 35px;
+                    height: 35px;
+                    background-color: #cacaca;
+                    margin-top: 2rem;
+                    border-radius: 0.3rem;
+                }
+
+                .avaliations{
+                    margin-top: 1rem;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 0.3rem;
+
+                    background-color: #cacaca;
+                }
+
+                p{
+                    span{
+                        font-weight: bold;
+                    }
+
+                    &:nth-child(2){
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .item:last-child{
+                border: none;
+            }
+        }
+    }
+
+}
