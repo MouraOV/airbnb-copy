@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: white;
+    --secundary-color: black;
+    --accent-color: #FF385C;
+    --font-color: #222222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Centralizar o conteúdo da página, exceto o Header (por causa da linha que ele tem e que se extende por toda a tela)*/
+
+.center{
+    padding: 0 180px;
+}
+
+a:visited{
+    color: #222222;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    padding: 14px 180px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #dfdfdf;
+    color: #222222;
+
+
+    .logo{
+        width: 100px;
+    }
+
+
+    .container-menu-and-action-buttons{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+
+        .menu{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: 2px solid #dfdfdf;
+
+            ul{
+                list-style: none;
+                display: flex;
+
+                li{
+
+                    a{
+                        text-decoration: none;
+                        padding-right: 1rem;
+                        padding-left: 1rem;
+                        border-right: 1px solid #abaaaa;
+                    }
+
+                }
+
+                li:last-child{
+                    a{
+                        border-right: none;
+                    }
+                }
+
+                li:first-child{
+                    a{
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            > a{
+                background-color: #FF385C;
+                display: block;
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    width: 40%;
+                    height: 40%;
+                }
+            }
+        }
+
+
+        .actions-buttons{
+            display: flex;
+            align-items: center;
+
+            .action-text{
+                margin-right: 2rem;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 0.9rem;
+ 
+            }  
+
+            .action-button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #EBEBEB;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 1rem;
+                border-radius: 100%;
+
+                img{
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
